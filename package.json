@@ -1,7 +1,7 @@
 {
 	"name": "nuxtui-template",
 	"type": "module",
-	"version": "2.0.0",
+	"version": "1.0.0",
 	"private": true,
 	"packageManager": "pnpm@9.15.3",
 	"description": "Personal Nuxt 3 + NuxtUI 3 starter template",
