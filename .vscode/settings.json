@@ -1,0 +1,33 @@
+{
+	// Use eslint as default formatter
+	"editor.formatOnSave": false,
+
+	// Tailwind compatibility
+	"tailwindCSS.experimental.classRegex": ["[\"'`](.*?)[\"'`]"],
+	"tailwindCSS.validate": true,
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+
+	// Auto fix
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "never"
+	},
+
+	// Enable eslint for all supported languages
+	"eslint.validate": [
+		"javascript",
+		"typescript",
+		"vue",
+		"html",
+		"markdown",
+		"json",
+		"jsonc",
+		"yaml",
+		"toml"
+	]
+}
