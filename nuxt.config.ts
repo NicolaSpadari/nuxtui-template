@@ -7,6 +7,9 @@ export default defineNuxtConfig({
 		"reka-ui/nuxt",
 		"nuxt-svgo"
 	],
+	extends: [
+		["github:NicolaSpadari/layer-ui", { auth: process.env.REPO_TOKEN }]
+	],
 	app: {
 		head: {
 			title: "Nuxt 3 + NuxtUI 3 template",
