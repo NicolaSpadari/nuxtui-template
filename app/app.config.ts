@@ -1,10 +1,22 @@
-import * as uiConfig from "@/ui";
-
 export default defineAppConfig({
 	ui: {
 		colors: {
 			neutral: "zinc"
 		},
-		...uiConfig
+		button: {
+			slots: {
+				base: "cursor-pointer"
+			}
+		},
+		dropdownMenu: {
+			slots: {
+				item: "cursor-pointer"
+			}
+		},
+		modal: {
+			slots: {
+				description: "mt-0"
+			}
+		}
 	}
 });

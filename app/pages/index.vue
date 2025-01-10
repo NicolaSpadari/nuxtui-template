@@ -1,12 +1,10 @@
 <template>
-	<UContainer class="text-center mt-20">
-		<div class="text-center space-y-4 mb-10">
-			<h1 class="text-3xl md:text-5xl font-bold">
-				Nuxt 3 + NuxtUI 3 starter
-			</h1>
-			<p class="text-xl">
-				{{ data }}
-			</p>
+	<UContainer class="text-center space-y-10 mt-20">
+		<div class="text-center space-y-4">
+			<UH1>
+				Some title
+			</UH1>
+			<UH2>{{ data }}</UH2>
 		</div>
 
 		<UModal title="Modal title">
@@ -20,7 +18,7 @@
 				<p>some content</p>
 			</template>
 		</UModal>
-	</ucontainer>
+	</UContainer>
 </template>
 
 <script lang="ts" setup>

@@ -13,6 +13,9 @@
 }
 
 @layer base {
+	:root{
+		--ui-header-height: calc(var(--spacing)*16)
+	}
 	-webkit-tap-highlight-color: transparent;
 }
 
