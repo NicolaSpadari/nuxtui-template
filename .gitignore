@@ -5,6 +5,7 @@ node_modules
 .nuxt
 .nitro
 .cache
+.claude
 .output
 .env
 dist

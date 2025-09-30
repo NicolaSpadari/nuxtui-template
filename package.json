@@ -1,10 +1,10 @@
 {
 	"name": "nuxtui-template",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"private": true,
-	"packageManager": "pnpm@9.15.3",
-	"description": "Personal Nuxt 3 + NuxtUI 3 starter template",
+	"packageManager": "bun@1.2.19",
+	"description": "Personal Nuxt 4 + NuxtUI 4 starter template",
 	"author": "Nicola Spadari",
 	"engines": {
 		"node": ">=23"
@@ -14,28 +14,26 @@
 		"build": "nuxt build",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"preinstall": "npx only-allow pnpm",
+		"preinstall": "npx only-allow bun",
 		"postinstall": "nuxt prepare",
 		"lint": "eslint . --fix"
 	},
 	"dependencies": {
-		"@nuxt/ui": "3.0.0-alpha.10",
-		"nuxt": "^3.15.1",
-		"vite-plugin-tailwind-attributify": "^1.0.8",
-		"vue": "^3.5.13",
-		"vue-router": "^4.5.0"
+		"@nuxt/ui": "^4.0.0",
+		"nuxt": "^4.1.2",
+		"vue": "^3.5.22",
+		"vue-router": "^4.5.1"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "^3.13.0",
-		"@iconify-json/lucide": "^1.2.22",
-		"@nuxt/eslint": "^0.7.5",
-		"@nuxt/image": "^1.9.0",
-		"@vueuse/core": "^12.3.0",
-		"@vueuse/nuxt": "^12.3.0",
-		"eslint": "^9.17.0",
-		"nuxt": "^3.15.1",
-		"nuxt-svgo": "^4.0.11",
-		"sass": "^1.83.1",
-		"typescript": "^5.7.3"
+		"@antfu/eslint-config": "^5.4.1",
+		"@iconify-json/lucide": "^1.2.68",
+		"@nuxt/eslint": "^1.9.0",
+		"@nuxt/image": "^1.11.0",
+		"@vueuse/core": "^13.9.0",
+		"@vueuse/nuxt": "^13.9.0",
+		"eslint": "^9.36.0",
+		"nuxt-svgo": "^4.2.6",
+		"sass": "^1.93.2",
+		"typescript": "^5.9.2"
 	}
 }

@@ -1,10 +1,10 @@
 <template>
-	<UContainer class="text-center space-y-10 mt-20">
+	<div class="text-center space-y-10 mt-20">
 		<div class="text-center space-y-4">
-			<UH1>
+			<ProseH1>
 				Some title
-			</UH1>
-			<UH2>{{ data }}</UH2>
+			</ProseH1>
+			<ProseH2>{{ data?.value }}</ProseH2>
 		</div>
 
 		<UModal title="Modal title">
@@ -18,11 +18,11 @@
 				<p>some content</p>
 			</template>
 		</UModal>
-	</UContainer>
+	</div>
 </template>
 
 <script lang="ts" setup>
-	const { data } = await useFetch("/api/hello", {
+	const { data } = await useFetch<MyInterface>("/api/hello", {
 		query: {
 			text: "world"
 		}

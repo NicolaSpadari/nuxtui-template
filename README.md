@@ -1,19 +1,19 @@
-<h1 align="center">Personal Nuxt 3 + NuxtUI 3 template</h1>
+<h1 align="center">Personal Nuxt 4 + NuxtUI 4 template</h1>
 <hr />
 
 ## Usage
 
 Clone to local:
 ```sh
-$ npx degit NicolaSpadari/nuxtui-template my-nuxtui-app
+$ npx giget gh:NicolaSpadari/nuxtui-template my-nuxtui-app
 ```
 
 Install dependencies:
 ```sh
-$ ni # or pnpm install
+$ ni # or bun install
 ```
 
 Run project:
 ```sh
-$ nr dev # or pnpm run dev
+$ nr dev # or bun run dev
 ```

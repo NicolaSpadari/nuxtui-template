@@ -1,3 +1,5 @@
+import constants from "./constants";
+
 export default defineNuxtConfig({
 	modules: [
 		"@vueuse/nuxt",
@@ -7,21 +9,31 @@ export default defineNuxtConfig({
 		"reka-ui/nuxt",
 		"nuxt-svgo"
 	],
-	extends: [
-		["github:NicolaSpadari/layer-ui", { auth: process.env.REPO_TOKEN }]
-	],
 	app: {
 		head: {
-			title: "Nuxt 3 + NuxtUI 3 template",
+			title: constants.name,
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
 			meta: [
-				{ name: "format-detection", content: "no" }
+				{ name: "format-detection", content: "no" },
+				{ name: "description", content: constants.description }
 			],
 			noscript: [
-				{ children: "JavaScript is required to run this project" }
+				{ textContent: "JavaScript is required to run this project" }
 			]
+		},
+		pageTransition: {
+			name: "page",
+			mode: "out-in"
+		},
+		layoutTransition: {
+			name: "layout",
+			mode: "out-in"
 		}
+	},
+	ui: {
+		mdc: true,
+		content: true
 	},
 	css: [
 		"@/assets/css/main.css"
@@ -32,16 +44,23 @@ export default defineNuxtConfig({
 	svgo: {
 		autoImportPath: "@/assets/"
 	},
-	experimental: {
-		typedPages: true
+	imports: {
+		presets: [
+			{
+				from: "vue-router",
+				imports: ["RouteParams"],
+				type: true
+			}
+		]
 	},
 	eslint: {
 		config: {
 			standalone: false
 		}
 	},
-	future: {
-		compatibilityVersion: 4
+	experimental: {
+		typedPages: true
 	},
-	compatibilityDate: "2025-01-01"
+	devtools: { enabled: true },
+	compatibilityDate: "2025-09-01"
 });

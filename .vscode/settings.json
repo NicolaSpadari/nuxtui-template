@@ -5,14 +5,7 @@
 	// Tailwind compatibility
 	"tailwindCSS.validate": true,
 	"tailwindCSS.experimental.classRegex": [
-		[
-			"ui:\\s*{([^)]*)\\s*}",
-			"[\"'`]([^\"'`]*).*?[\"'`]"
-		],
-		[
-			"/\\*\\s?ui\\s?\\*/\\s*{([^;]*)}",
-			":\\s*[\"'`]([^\"'`]*).*?[\"'`]"
-		]
+		["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
 	],
 	"tailwindCSS.classAttributes": [
 		"class",

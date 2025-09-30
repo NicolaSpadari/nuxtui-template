@@ -3,7 +3,12 @@
 		<Body class="antialiased font-sans">
 			<UApp>
 				<SiteHeader />
-				<NuxtPage />
+				
+				<UMain>
+					<NuxtLayout>
+						<NuxtPage />
+					</NuxtLayout>
+				</UMain>
 			</UApp>
 		</Body>
 	</Html>

@@ -6,6 +6,10 @@
 
 		<UNavigationMenu :items="items" />
 
+		<template #body>
+			<UNavigationMenu :items="items" orientation="vertical" />
+		</template>
+
 		<template #right>
 			<UColorModeButton />
 		</template>
@@ -15,22 +19,20 @@
 <script setup lang="ts">
 	const items = computed(() => [
 		{
-			label: "Docs",
+			label: "Page",
 			to: "/"
 		},
 		{
-			label: "Components",
+			label: "Page",
 			to: "/"
 		},
 		{
-			label: "Figma",
-			to: "https://www.figma.com/",
-			target: "_blank"
+			label: "Page",
+			to: "/"
 		},
 		{
-			label: "Repository",
-			to: "https://github.com/NicolaSpadari/nuxtui-template",
-			target: "_blank"
+			label: "Page",
+			to: "/"
 		}
 	]);
 </script>

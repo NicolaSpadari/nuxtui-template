@@ -28,6 +28,7 @@ export default eslintConfig(
 			}],
 			"vue/comma-dangle": ["warn", "never"],
 			"antfu/top-level-function": "off",
+			"antfu/if-newline": "off",
 			"node/prefer-global/process": ["off"]
 		}
 	},
